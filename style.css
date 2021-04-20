@@ -1,0 +1,46 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+.toolbar{
+    background-color: rgb(54, 162, 235);
+}
+
+.main-title{
+    color: #fff;
+    font-weight: 700;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+.row{
+    margin-top: 1.5rem;
+}
+
+.row:last-child{
+    margin-bottom: 1.5rem;
+}
+
+.list-group-item-title{
+    font-size: 1rem;
+    font-weight: 700;
+    color: grey;
+}
+
+.list-group-item-subtitle{
+    font-size: .8rem;
+    font-weight: 700;
+    color: grey;
+}
+
+.list-group-item-content{
+    font-size: .6rem;
+    color: grey;
+}
+
+.table{
+    color: grey;
+}

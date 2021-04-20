@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+    <title>Dashboard APG</title>
+            <!-- SEO / Google -->
+            <meta name="author" content="Pascal de Waard">
+            <meta name="description" content="APG Dashboard">
+    
+            <!-- Social: Twitter -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="APG Dashboad!">
+            <meta name="twitter:description" content="APG Dashboad!">
+            <meta name="twitter:image:src" content="https://www.academictransfer.com/media/derivatives/logos/apg-nl-wide/21c785ffcffca0fc8a6c6b421e119420.png">
+</head>
+
+<body>
+    <nav class="navbar toolbar">
+        <div class="container-fluid">
+            <h2 class="main-title">Proces visualisatie dashboard</h2>
+            <img src="img/APG.png" height="80" width="500" alt="Image 1">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <section class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Huidig aantal cases</h5>
+                        <p id="cases-amount" class="card-text"></p>
+                        <h5 class="card-title">Waarvan onopgelost</h5>
+                        <p id="cases-open" class="card-text"></p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-9 col-md-6 col-sm-12">
+                <section class="card">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Aantal meldingen per week</h5>
+                        <canvas id="line-chart"></canvas>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <section class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Aantal meldingen per week</h5>
+                        <canvas id="pie-chart"></canvas>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-9 col-md-6 col-sm-12">
+                <section class="card">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Klantnummer</th>
+                                <th scope="col">Geboortedatum</th>
+                                <th scope="col">Overlijdensdatum</th>
+                                <th scope="col">Geslacht</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.0/dist/chart.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script>
+        moment.locale('nl');
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
